@@ -18,15 +18,17 @@ a {
 li {
     list-style: none;
     color: aliceblue;
-
     margin: 10px;
     text-align: center;
-    width: 95px;
+    width: 120px;
     font-size: 20px;
+    display: flex;
+    justify-content: end;
 }
 
 .navbar ul {
     position: absolute;
+    
     top: 20px;
 
     display: flex;
@@ -117,7 +119,7 @@ button {
 .our-products {
     background-color: rgb(243, 241, 241);
     width: 100%;
-    height: 1400px;
+    height: 1520px;
 }
 
 .title {
@@ -132,18 +134,19 @@ button {
 
 .products {
     background-color: rgb(255, 255, 255);
-    height: 1150px;
+    height: 1250px;
     margin: 120px;
     margin-top: 30px;
 }
 
 .products-grid {
     display: grid;
-    column-gap: 50px;
+    column-gap: 100px;
     grid-template-columns: auto auto auto;
-    padding: 20px;
+    padding: 140px;
     padding-top: 70px;
     justify-content: center;
+    padding-bottom: 0px;
 }
 
 .grid-products {
@@ -165,7 +168,7 @@ button {
     font-weight: bold;
     width: 200px;
     height: 45px;
-    margin: 25px;
+    margin: 60px;
 }
 
 .see-more {
@@ -175,7 +178,7 @@ button {
 .seemore-btn {
     border: 2px solid #48ca95;
     color: #48ca95;
-    margin-top: 30px;
+    margin-top: 10px;
 
 }
 
@@ -191,7 +194,7 @@ button {
     display: grid;
     column-gap: 1px;
     grid-template-columns: auto auto;
-    margin: 40px;
+    
 
     align-self: center;
     justify-self: center;
@@ -270,23 +273,25 @@ button {
     width: 90%;
 }
 
+/*----------Contact Now Section----------*/
 .contact-us {
     width: 100%;
     height: 950px;
     background-image: url(images/contact_g.jpg );
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 
 }
 
-/*----------Contact Now Section----------*/
 .contact-border {
     border: 2px solid white;
     width: 790px;
     height: 670px;
     align-items: center;
-    margin-left: 270px;
+    
     margin-top: 50px;
+    display: inline-block;
 }
 
 .contact-us {

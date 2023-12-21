@@ -4,23 +4,27 @@ body {
     padding: 0px;
     font-family: 'Poppins', sans-serif;
 }
+
 .wrapper {
     display: flex;
     justify-content: space-between;
-  
+    margin: -5px;
 }
-.box1{
-width: 60px;
-height: 60px;
-background-color: #4f4aa6;
 
-}
-.box2{
+.box1 {
     width: 60px;
-height: 60px;
-background-color: #4f4aa6;
-
+    height: 60px;
+    background-color: #4f4aac;
+    margin-left: 50px;
 }
+
+.box2 {
+    width: 60px;
+    height: 60px;
+    background-color: #4f4aa6;
+    margin-right: 50px;
+}
+
 /*----------banner section----------*/
 nav {
     position: absolute;
@@ -43,26 +47,29 @@ li {
     width: 120px;
     font-size: 20px;
     display: flex;
-    justify-content: end;
+    justify-content: center;
 }
-li>.search-icon{
+
+li>.search-icon {
     margin-left: 2px;
 }
+
 .navbar ul {
     top: 20px;
     display: flex;
     margin-top: 10px;
-    
+
 }
+
 .navbar {
     display: grid;
-    grid-template-columns: auto auto; /* Two columns: one for logo, one for list items */
-    align-items: center; /* Center vertically within the grid */
-    gap: 20px; /* Space between logo and list items */
+    grid-template-columns: auto auto;
+    align-items: center;
+    gap: 450px;
     position: absolute;
     top: 20px;
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Adjust for centering */
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .logo {
@@ -71,24 +78,33 @@ li>.search-icon{
 
 .grid-container {
     position: absolute;
-    top: 220px;
+    top: 50px;
     display: grid;
-    column-gap: 70px;
+    column-gap: 2px;
     grid-template-columns: auto auto;
-    padding: 5px;
+    padding: 55px;
     color: white;
-    margin-left: 50px;
+    margin: 55px;
+    align-items: center;
+}
 
+.grid-item {
+    margin: 5px;
 }
 
 .grid-item span {
-    font-size: 80px;
+    font-size: 100px;
     font-weight: 600;
 }
 
 .grid-item h1 {
-    font-size: 50px;
+    font-size: 60px;
     font-weight: lighter;
+}
+
+.paragraf {
+    width: 67%;
+    font-size: 20px;
 }
 
 button {
@@ -98,7 +114,7 @@ button {
     color: white;
     font-weight: 200;
     padding: 20px;
-    margin-top: 70px;
+    margin-top: 60px;
     font-size: 20px;
 
 }
@@ -146,7 +162,7 @@ button {
 /*----------our products section----------*/
 
 .our-products {
-    background-color: rgb(243, 241, 241);
+    background-color: rgb(252, 249, 249);
     width: 100%;
     height: 1520px;
 }
@@ -210,11 +226,13 @@ button {
     margin-top: 10px;
 
 }
-.seemore-btn:hover{
+
+.seemore-btn:hover {
     background-color: #2fcc8d;
     color: aliceblue;
     border: none;
 }
+
 /*----------Sell Section----------*/
 
 .sell {
@@ -227,22 +245,22 @@ button {
     display: grid;
     column-gap: 1px;
     grid-template-columns: auto auto;
-    
-
     align-self: center;
     justify-self: center;
+    justify-content: center;
 }
 
 .sell-grid-item {
     font-size: 45px;
     color: white;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 70px;
     padding: 1px;
     align-self: center;
     justify-self: center;
     margin-left: 50px;
-
+    width: 700px;
+    margin-top: 0px;
 }
 
 .shop-now-btn {
@@ -255,14 +273,14 @@ button {
 }
 
 .sell-grid-item p {
-    font-size: 45px;
+    font-size: 55px;
     font-weight: lighter;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .sell-grid-item span {
-    font-size: 50px;
-    font-weight: bolder;
+    font-size: 80px;
+    font-family: Dosis, sans-serif;
 
 }
 
@@ -271,11 +289,12 @@ button {
     width: 100%;
     height: 600px;
     background-color: rgb(255, 255, 255);
+
 }
 
 .reviews-grid {
     display: grid;
-    column-gap: 100px;
+    column-gap: 200px;
     grid-template-columns: auto auto;
 
 }
@@ -291,14 +310,25 @@ button {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+
 .slider li.active {
-    background-color: #19e091;
+    background-color: #4f4aa6;
+}
+
+.slider .banner-active {
+    background-color: #ffffff;
 }
 
 .slider {
     display: flex;
     margin-top: 270px;
 
+}
+
+.grid-item>.slider {
+    margin-top: 150px;
+    align-items: center;
+    justify-content: center;
 }
 
 .reviews-grid-items {
@@ -308,7 +338,7 @@ button {
 
 .reviews-grid-items p {
     font-size: 20px;
-    width: 90%;
+    width: 100%;
 }
 
 /*----------Contact Now Section----------*/
@@ -327,7 +357,7 @@ button {
     width: 790px;
     height: 670px;
     align-items: center;
-    
+
     margin-top: 50px;
     display: inline-block;
 }
@@ -388,8 +418,8 @@ form {
 
 .grid-footer {
     display: grid;
-    column-gap: 50px;
-    grid-template-columns: 250px 200px 200px 200px;
+    column-gap: 60px;
+    grid-template-columns: 250px 250px 170px 200px;
     padding: 50px;
     align-items: center;
     justify-content: center;
